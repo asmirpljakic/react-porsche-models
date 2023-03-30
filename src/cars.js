@@ -20,8 +20,8 @@ export const cars = [
   },
   {
     id: 4,
-    img: 'https://files.porsche.com/filestore/image/multimedia/none/992-c4cab-gts-modelimage-sideshot/thumbwhite/3313b6ce-d31f-11eb-80d9-005056bbdc38;sI;twebp/porsche-thumbwhite.webp',
-    model: '718 Spyder',
+    img: 'https://files.porsche.com/filestore/image/multimedia/none/cayenne-s-coupe-platinum-moex-sideshot/thumbwhite/fcbda596-6172-11ec-80e5-005056bbdc38;sI;twebp/porsche-thumbwhite.webp',
+    model: 'Cayenne S Coupé Platinum Edition',
     owner: 'Semir Pljakic',
   } 
 ];
