@@ -18,10 +18,4 @@ export const cars = [
     model: 'Cayenne Turbo GT',
     owner: 'Novak Djokovic',
   },
-  {
-    id: 4,
-    img: 'https://files.porsche.com/filestore/image/multimedia/none/cayenne-s-coupe-platinum-moex-sideshot/thumbwhite/fcbda596-6172-11ec-80e5-005056bbdc38;sI;twebp/porsche-thumbwhite.webp',
-    model: 'Cayenne S Coupé Platinum Edition',
-    owner: 'Semir Pljakic',
-  } 
 ];
