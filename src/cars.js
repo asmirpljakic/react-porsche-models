@@ -17,5 +17,13 @@ export const cars = [
     img: 'https://files.porsche.com/filestore/image/multimedia/none/e3-tgtc-modelimage-sideshot/thumbwhite/aba76a99-c9e7-11eb-80d7-005056bbdc38;twebp/porsche-thumbwhite.webp',
     model: 'Cayenne Turbo GT',
     owner: 'Novak Djokovic',
+    
+  },
+  {
+    id: 4,
+    img: 'https://files.porsche.com/filestore/image/multimedia/none/e3-tgtc-modelimage-sideshot/thumbwhite/aba76a99-c9e7-11eb-80d7-005056bbdc38;twebp/porsche-thumbwhite.webp',
+    model: 'Cayenne Turbo GT',
+    owner: 'Novak Djokovic',
+    
   },
 ];
