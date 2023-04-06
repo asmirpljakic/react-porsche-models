@@ -1,38 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { dataCars } from './dataCars';
 
-const Car = ({ img, model, owner }) => {
-  const clickHandler = e => {
-    console.log(e);
-    console.log(e.target);
-    alert(model);
-  };
+const Car = () => {
+  const [car, setCar] = useState(dataCars);
 
-  const clickHandlerTwo = owner => {
-    console.log(owner);
-    alert(owner);
+  const removeItem = id => {
+    console.log(id);
+    let newCar = car.filter(car => car.id !== id);
+    setCar(newCar);
   };
 
   return (
-    <article className='car'>
-      <img src={img} alt={img} />
-      <h2>{model}</h2>
-      <h5>{owner.toUpperCase()}</h5>
-      <button
-        type='button'
-        className='btn'
-        onClick={clickHandler}
-        onMouseOver={() => console.log(model)}
-      >
-        model
-      </button>
-      <button
-        type='button'
-        className='btn'
-        onClick={() => clickHandlerTwo(owner)}
-      >
-        Owner
-      </button>
-    </article>
+    <>
+      {car.map(perCar => {
+        const { id, img, model, owner } = perCar;
+
+        const clickHandler = e => {
+          console.log(e);
+          console.log(e.target);
+          alert(model);
+        };
+
+        const clickHandlerTwo = () => {
+          console.log(owner);
+          alert(owner);
+        };
+        return (
+          <article key={id} className='car'>
+            <img src={img} alt={img} />
+            <h2>{model}</h2>
+            <h5>{owner.toUpperCase()}</h5>
+            <button
+              type='button'
+              className='btn'
+              onClick={clickHandler}
+              onMouseOver={() => console.log(model)}
+            >
+              model
+            </button>
+            <button type='button' className='btn' onClick={clickHandlerTwo}>
+              Owner
+            </button>
+            <button className='btn' onClick={() => removeItem(id)}>
+              remove
+            </button>
+            <button
+              className='btn'
+              onClick={() => {
+                setCar([]);
+              }}
+            >
+              clear All Cars
+            </button>
+          </article>
+        );
+      })}
+    </>
   );
 };
 
