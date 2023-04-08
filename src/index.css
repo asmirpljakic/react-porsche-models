@@ -12,6 +12,7 @@ Variables
 
   /* rest of the colors */
   --white: #fff;
+  --radius: 0.25rem;
 
   /* rest of the vars */
   --borderRadius: 0.45rem;
@@ -54,6 +55,7 @@ h2 {
   text-transform: capitalize;
   display: inline-block;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 .btn:hover {
   background: var(--primary-300);
@@ -74,7 +76,7 @@ h2 {
 .carlist {
   width: 90vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 1.5rem auto;
   display: grid;
   gap: 2rem;
 }
