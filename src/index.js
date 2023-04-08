@@ -8,7 +8,7 @@ const root = createRoot(rootElement);
 
 function CarList() {
   return (
-    <section className='carlist'>
+    <section>
       <Car />
     </section>
   );

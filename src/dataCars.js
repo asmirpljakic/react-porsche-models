@@ -23,6 +23,6 @@ export const dataCars = [
     id: 4,
     img: 'https://files.porsche.com/filestore/image/multimedia/none/982-718-bo-modelimage-sideshot/thumbwhite/85f01af2-a8ce-11eb-80d5-005056bbdc38;sO;twebp/porsche-thumbwhite.webp',
     model: '718 Boxster',
-    owner: 'Semir Pljakic',
+    owner: 'Semir Plakic',
   },
 ];
